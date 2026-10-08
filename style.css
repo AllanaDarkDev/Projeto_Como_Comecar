@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(15, 15, 15, 0.9)),
+    url("https://www.colegiopoliedro.com.br/app/uploads/2022/02/EducarComTecnologia-773x340-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h3, header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #d4af37;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #d4af37;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+    border-right: 1px solid #777777;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+nav a:hover {
+    color: #d4af37;
+    opacity: 1;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #d4af37;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    color: #d4af37;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.apresentacao {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+}
+
+.apresentacao p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 35px;
+    background-color: #1b1b1b;
+    border: 1px solid #d4af37;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+form h2 {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+    background-color: #101010;
+    color: #ffffff;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #777777;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #d4af37, #a98520);
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #f0d878, #d4af37);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+.saibamais {
+    background-color: #1c1c1c;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.resultsdivs {
+    background-color: #1c1c1c;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    padding: 15px;
+    padding-right: -25px;
+    padding-left: -25px;
+    text-align: center;
+}
+.toggle-label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #D4AF37;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 3px solid transparent;
+    background: 
+        linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+        linear-gradient(90deg, #D4AF37, #FFD43B) border-box;
+    border-radius: 15px;
+}
+
+.toggle-label:hover{
+    color: #393838;
+    border: 3px solid transparent;
+    background: 
+        linear-gradient(#f3e7be, #6b6657) padding-box,
+        linear-gradient(90deg, #e8c884, #eee755) border-box;
+}
+
+.toggle-input:checked + .toggle-label {
+    background-color: #FFD43B;
+    color: #000000;
+    border: 3px solid transparent;
+    background: 
+        linear-gradient(#FFD43B, #a5851b) padding-box,
+        linear-gradient(90deg, #353535, #525252) border-box;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.saibamais h2, .resultsdivs h2 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.saibamais p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+
+.resultsdivs a {
+    color: #FFB86B;
+    border: 0px;
+    padding: 5px;
+}
+
+.resultsdivs h3 {
+    font-size: 26px;
+    color: #FFD23F;
+    line-height: 1.6;
+}
+
+.resultsdivs h4 {
+    font-size: 19px;
+    color: #af8d1d;
+    line-height: 1.6;
+}
+
+#bigSpace {
+    margin-top: 50px;
+}
+
+footer {
+    background: linear-gradient(135deg, #080808, #151515);
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px 25px;
+    border-top: 1px solid #d4af37;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-content h2 {
+    color: #d4af37;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.footer-content p {
+    color: #aaaaaa;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f0d878;
+    transform: translateY(-2px);
+}
